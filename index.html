@@ -27,17 +27,17 @@
 
                         <div class="input-wrapper">
                             <label for="fullname">Nome completo</label>
-                            <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança" required>
+                            <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança" >
                         </div>
 
                         <div class="input-wrapper">
                             <label for="birth">Data de nascimento</label>
-                            <input type="date" name="birth" id="birth" lang="pt-BR" required>
+                            <input type="date" name="birth" id="birth" lang="pt-BR" >
                         </div>
 
                         <div class="select-wrapper">
                             <label for="gender">Sexo</label>
-                            <select name="gender" id="gender" required>
+                            <select name="gender" id="gender" >
                                 <option value="">Selecione</option>
                                 <option value="male">Masculino</option>
                                 <option value="female">Feminino</option>
@@ -76,38 +76,66 @@
 
                         <div class="input-wrapper">
                             <label for="cep">CEP</label>
-                            <input type="text" name="cep" id="cep" placeholder="CEP" required>
+                            <input type="text" name="cep" id="cep" placeholder="CEP" >
                         </div>
 
 
                         <div class="flex">
                             <div class="input-wrapper flex-2">
                                 <label for="street">Rua</label>
-                                <input type="text" name="street" id="street" placeholder="Rua" required
+                                <input type="text" name="street" id="street" placeholder="Rua"
                                 value="Rua dos Estudantes" disabled>
                             </div>
 
                             <div class="input-wrapper flex-1">
                                 <label for="number">Número</label>
-                                <input type="number" name="number" id="number" placeholder="Número" required>
+                                <input type="number" name="number" id="number" placeholder="Número" >
                             </div>
                         </div>
 
                         <div class="flex">
                             <div class="input-wrapper flex-2">
                                 <label for="city">Cidade</label>
-                                <input type="text" name="city" id="city" placeholder="Cidade" required
+                                <input type="text" name="city" id="city" placeholder="Cidade" 
                                 value="São Paulo" disabled>
                             </div>
 
                             <div class="input-wrapper flex-1">
                                 <label for="state">Estado</label>
-                                <input type="text" name="state" id="state" placeholder="Estado" required
+                                <input type="text" name="state" id="state" placeholder="Estado" 
                                 value="São Paulo" disabled>
                             </div>
 
                         </div>
                     </fieldset>
+
+                    <fieldset class="guardian">
+                        <legend>Informações do responsável</legend>
+
+                        <div class="input-wrapper">
+                            <label for="guardian">Nome do responsável</label>
+                            <input type="text" name="guardian" id="guardian" placeholder="Nome do responsável" >
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone do responsável</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(00) 00000-0000" >
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mail">E-mail do responsável</label>
+                            <input type="email" name="mail" id="mail" placeholder="E-mail do responsável" required>
+                            <div class="error">
+                                <img src="assets/icons/alert-circle.svg" alt="">
+                                <span>Por favor, insira um e-mail válido</span>
+                            </div>
+                        </div>
+
+
+                    </fieldset>
+                    
+                    
                 </form>
             </div>
         </main>
